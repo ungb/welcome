@@ -12,7 +12,8 @@ notifications:
     on_failure: change
 
 script: 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
-
+# Send coverage data to Coveralls
+after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
 git:
   depth: 10
 
