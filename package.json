@@ -35,6 +35,7 @@
     "etch": "^0.8.0"
   },
   "devDependencies": {
+    "coveralls": "2.10.0",
     "atom-mocha-test-runner": "^1.0.0",
     "standard": "^8.6.0"
   },
